@@ -71,18 +71,20 @@ function App() {
 
   return (
     <div className="App">
-      <h1>21BPS1333</h1>
-      <form onSubmit={handleSubmit}>
-        <textarea
-          value={jsonInput}
-          onChange={(e) => setJsonInput(e.target.value)}
-          placeholder="Enter JSON here..."
-          rows="5"
-        />
-        <br />
-        <button type="submit">Submit</button>
-        {error && <div style={{ color: "red" }}>{error}</div>}
-      </form>
+      <div className="box">
+        <h1>Bajaj Finserv (21BPS1333)</h1>
+        <form onSubmit={handleSubmit}>
+          <textarea
+            value={jsonInput}
+            onChange={(e) => setJsonInput(e.target.value)}
+            placeholder="Enter JSON here..."
+            rows="5"
+          />
+          <br />
+          <button type="submit">Submit</button>
+          {error && <div style={{ color: "red" }}>{error}</div>}
+        </form>
+      </div>
 
       {response && (
         <>

@@ -1,11 +1,18 @@
 .App {
   font-family: Arial, sans-serif;
   text-align: center;
+  height: 1000px;
   padding: 20px;
+  padding-top: 150px;
+  background-color: darkgrey;
 }
+
 
 textarea {
   width: 300px;
+  background-color: antiquewhite;
+  border: 3px;
+  border-radius: 5px;
 }
 
 label {
