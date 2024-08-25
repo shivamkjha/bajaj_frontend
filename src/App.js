@@ -19,13 +19,16 @@ function App() {
 
       setError("");
 
-      const res = await fetch("http://localhost:3000/bfhl", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(parsedInput),
-      });
+      const res = await fetch(
+        "https://bajaj-backend-1-gj5b.onrender.com/bfhl",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(parsedInput),
+        }
+      );
 
       if (!res.ok) {
         throw new Error("Network response was not ok.");
